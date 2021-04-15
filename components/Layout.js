@@ -1,8 +1,12 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Layout({ children }) {
   return (
     <div className="layout">
+      <Head>
+        <title>Marmite App</title>
+      </Head>
       <header>
         <Link href="/">
           <a>
